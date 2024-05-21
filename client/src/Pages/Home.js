@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 import UserRegister from "../components/UserRegister";
 import List from "../components/List";
 function Home() {

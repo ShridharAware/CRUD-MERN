@@ -1,6 +1,10 @@
 import { useDispatch } from "react-redux";
 import { useState } from "react";
-import { Modal, Form, Col, Row, Button } from "react-bootstrap";
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
 import { useParams, useNavigate } from "react-router-dom";
 import { updateUserById } from "../redux/userSlice";
 import { toast } from "react-toastify";

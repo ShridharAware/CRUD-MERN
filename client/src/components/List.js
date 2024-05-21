@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { CardBody, Table } from "react-bootstrap";
-import { MdEdit, MdDelete } from "react-icons/md";
+import CardBody from "react-bootstrap/CardBody";
+import Table from "react-bootstrap/Table";
+import { MdEdit } from "react-icons/md";
+import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { findUsers, deleteUser } from "../redux/userSlice";
 
