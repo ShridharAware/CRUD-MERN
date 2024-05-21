@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CardBody from "react-bootstrap/CardBody";
 import Table from "react-bootstrap/Table";
-import { MdEdit } from "react-icons/md";
-import { MdDelete } from "react-icons/md";
+import { ReactComponent as MdEdit } from "../assets/Edit.svg";
+import { ReactComponent as MdDelete } from "../assets/Delete.svg";
 import { Link } from "react-router-dom";
 import { findUsers, deleteUser } from "../redux/userSlice";
 
@@ -52,10 +52,21 @@ function List() {
                       to={`/update/${user._id}`}
                       style={{ textDecoration: "none" }}
                     >
-                      <MdEdit style={{ marginTop: "-12px", color: "black" }} />
+                      <MdEdit
+                        style={{
+                          marginTop: "-12px",
+                          color: "black",
+                          height: "15px",
+                          width: "15px",
+                        }}
+                      />
                     </Link>
                     <MdDelete
-                      style={{ cursor: "pointer" }}
+                      style={{
+                        cursor: "pointer",
+                        height: "15px",
+                        width: "15px",
+                      }}
                       onClick={() => confirmDelete(user._id)}
                     />
                   </td>

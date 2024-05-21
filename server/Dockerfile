@@ -1,5 +1,7 @@
 FROM node:alpine
 
+RUN npm install -g pm2
+
 WORKDIR /app
 
 COPY package.json .
@@ -10,4 +12,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["npm", "start"]
+CMD ["pm2-runtime", "ecosystem.config.json"]
